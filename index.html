@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>LD_entretien – Entretien d'espaces verts autour de Pusignan</title>
+<title>LD_entretien – Entretien d'espaces verts</title>
 <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;800&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f6f7f1;--ink:#18261b;--green:#1d4f2a;--deep:#12331a;--accent:#9ccb3b;--bark:#7d5a35;--card:#fff;--line:#d9e0c9;--moss:#e8eedb;--mute:#4d5d50;
@@ -144,24 +144,24 @@ function sendQ(e){e.preventDefault();var g=function(i){return document.getElemen
 function ctaBlock(){return '<div class="cta"><a class="btn main" href="#/contact">Demander mon devis gratuit</a><a class="btn alt" href="tel:+33614446006">Appeler le 06 14 44 60 06</a></div>'}
 function home(){
 var cards=S.map(function(s){return '<a class="card" href="#/'+s.id+'">'+thumb(s)+'<div class="body"><h3>'+s.t+'</h3><p>'+s.short+'</p><span class="more">En savoir plus</span></div></a>'}).join("");
-return '<header class="hero" style="background:linear-gradient(160deg,rgba(18,51,26,.92),rgba(29,79,42,.8)),url('+IMG.i17+') center/cover"><div class="wrap"><h1>Entretien d\'espaces verts autour de Pusignan</h1><p class="sub">Taille, élagage, abattage, tonte et débroussaillage pour particuliers et professionnels.</p><ul class="pills"><li>50 % de crédit d\'impôt</li><li>Déplacement gratuit</li><li>Devis gratuit</li></ul>'+ctaBlock()+'</div></header>'+
-'<div class="trust"><div class="wrap"><span>Devis gratuit</span><span>Déplacement gratuit</span><span>50 % de crédit d’impôt</span><span>Rayon de 50 km autour de Pusignan</span></div></div>'+
+return '<header class="hero" style="background:linear-gradient(160deg,rgba(18,51,26,.92),rgba(29,79,42,.8)),url('+IMG.i17+') center/cover"><div class="wrap"><h1>Entretien d\'espaces verts près de chez vous</h1><p class="sub">Taille, élagage, abattage, tonte et débroussaillage pour particuliers et professionnels.</p><ul class="pills"><li>50 % de crédit d\'impôt</li><li>Déplacement gratuit</li><li>Devis gratuit</li></ul>'+ctaBlock()+'</div></header>'+
+'<div class="trust"><div class="wrap"><span>Devis gratuit</span><span>Déplacement gratuit</span><span>50 % de crédit d’impôt</span><span>Intervention dans un rayon de 50 km</span></div></div>'+
 '<section id="prestations"><div class="wrap"><h2>Nos prestations</h2><p class="lead">Choisissez un service pour voir en détail ce que je fais et comment.</p><div class="grid">'+cards+'</div></div></section>'+
 '<section id="realisations"><div class="wrap"><h2>Mes réalisations</h2><p class="lead">Quelques chantiers récents, avant et après mon passage.</p><div class="gal"><img loading="lazy" alt="Tonte avant et après" src="'+IMG.i16+'"><img loading="lazy" alt="Taille de haie avant et après" src="'+IMG.i11+'"><img loading="lazy" alt="Débroussaillage avant et après" src="'+IMG.i20+'"></div></div></section>'+
-'<section class="facts"><div class="wrap"><div><div class="n">50 %</div><h3>de crédit d\'impôt</h3><p>La moitié de votre facture d\'entretien vous est rendue en crédit d\'impôt.</p></div><div><div class="n">0 €</div><h3>de déplacement</h3><p>Aucun frais de déplacement dans un rayon de 50 km autour de Pusignan.</p></div><small>Crédit d\'impôt pour les particuliers, selon les conditions en vigueur.</small></div></section>'+
+'<section class="facts"><div class="wrap"><div><div class="n">50 %</div><h3>de crédit d\'impôt</h3><p>La moitié de votre facture d\'entretien vous est rendue en crédit d\'impôt.</p></div><div><div class="n">0 €</div><h3>de déplacement</h3><p>Aucun frais de déplacement dans un rayon de 50 km.</p></div><small>Crédit d\'impôt pour les particuliers, selon les conditions en vigueur.</small></div></section>'+
 '<section><div class="wrap"><h2>Comment ça se passe</h2><div class="steps"><div><b>1</b><h3>Vous m’appelez</h3><p>Par téléphone ou par SMS, vous me décrivez votre besoin.</p></div><div><b>2</b><h3>Devis gratuit</h3><p>Je me déplace sans frais et je vous remets un devis clair.</p></div><div><b>3</b><h3>Je m’occupe de tout</h3><p>Les travaux sont réalisés au jour convenu, jardin net à la fin.</p></div></div></div></section>'+
-'<section class="zone"><div class="wrap"><h2>Zone d\'intervention</h2><p class="lead" style="margin:0">Basé à Pusignan, j\'interviens dans un rayon de 50 km. Vous n\'êtes pas sûr d\'être dans la zone ? Appelez-moi, on vérifie ensemble.</p></div></section>'+
+'<section class="zone"><div class="wrap"><h2>Zone d\'intervention</h2><p class="lead" style="margin:0">J\'interviens dans un rayon de 50 km. Vous n\'êtes pas sûr d\'être dans la zone ? Appelez-moi, on vérifie ensemble.</p></div></section>'+
 '<section class="final" id="contact"><div class="wrap"><h2>Demandez votre devis gratuit</h2><p class="lead" style="margin:0 auto">Réponse rapide.</p><a class="tel" href="tel:+33614446006">06 14 44 60 06</a>'+form()+'<p style="margin-top:18px"><a href="mailto:LD_entretien@yahoo.com" style="color:var(--green);font-weight:700">LD_entretien@yahoo.com</a></p></div></section>'}
 function page(s){
 return '<div class="wrap crumb"><a href="#/">Accueil</a> › '+s.t+'</div><header class="sp"><div class="wrap"><h1>'+s.t+'</h1><p>'+s.intro+'</p><div class="cta" style="margin-top:20px"><a class="btn main" href="#/contact">Demander mon devis gratuit</a><a class="btn alt" style="color:#fff" href="tel:+33614446006">Appeler</a></div></div></header>'+
-'<section><div class="wrap">'+gal(s)+'<div class="two"><div><h2>Ce que je fais</h2><ul class="list">'+s.do.map(function(d){return '<li>'+d+'</li>'}).join("")+'</ul></div><div><div class="box"><h3>'+s.tip+'</h3><p>'+s.tipx+'</p></div><div class="box" style="margin-top:14px"><h3>50 % de crédit d\'impôt</h3><p>Pour les particuliers, selon les conditions en vigueur. Déplacement gratuit dans un rayon de 50 km autour de Pusignan.</p></div></div></div></div></section>'+
+'<section><div class="wrap">'+gal(s)+'<div class="two"><div><h2>Ce que je fais</h2><ul class="list">'+s.do.map(function(d){return '<li>'+d+'</li>'}).join("")+'</ul></div><div><div class="box"><h3>'+s.tip+'</h3><p>'+s.tipx+'</p></div><div class="box" style="margin-top:14px"><h3>50 % de crédit d\'impôt</h3><p>Pour les particuliers, selon les conditions en vigueur. Déplacement gratuit dans un rayon de 50 km.</p></div></div></div></div></section>'+
 '<section class="zone final"><div class="wrap"><h2>Un devis pour '+s.t.toLowerCase()+' ?</h2><p class="lead" style="margin:0 auto">Gratuit, sans engagement.</p>'+ctaBlock()+'<p style="margin-top:22px"><a href="#/" style="color:var(--green);font-weight:700">Voir toutes les prestations</a></p></div></section>'}
 function render(){
 var h=location.hash.replace(/^#\/?/,""),s=S.filter(function(x){return x.id===h})[0],app=document.getElementById("app");
 app.innerHTML=s?page(s):home();
-document.title=(s?s.t+" – ":"")+"LD_entretien – Pusignan et alentours";
+document.title=(s?s.t+" – ":"")+"LD_entretien – Entretien d’espaces verts";
 if(["contact","prestations","realisations"].indexOf(h)>-1){var c=document.getElementById(h);if(c)c.scrollIntoView()}else{window.scrollTo(0,0)}}
-document.getElementById("foot").innerHTML='<strong>LD_entretien</strong> · Entretien d’espaces verts<br>Pusignan et 50 km alentour · <a href="tel:+33614446006">06 14 44 60 06</a> · <a href="mailto:LD_entretien@yahoo.com">LD_entretien@yahoo.com</a><br><br>'+S.map(function(s){return '<a href="#/'+s.id+'">'+s.t+'</a>'}).join("");
+document.getElementById("foot").innerHTML='<strong>LD_entretien</strong> · Entretien d’espaces verts<br>Intervention dans un rayon de 50 km · <a href="tel:+33614446006">06 14 44 60 06</a> · <a href="mailto:LD_entretien@yahoo.com">LD_entretien@yahoo.com</a><br><br>'+S.map(function(s){return '<a href="#/'+s.id+'">'+s.t+'</a>'}).join("");
 window.addEventListener("hashchange",render);render();
 </script>
 </body>
